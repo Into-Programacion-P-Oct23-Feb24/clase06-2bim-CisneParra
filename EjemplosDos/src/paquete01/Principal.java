@@ -29,16 +29,22 @@ public class Principal {
         ciudad = DatosUbicacion.obtenerCiudad();
         misNotas = DatoAcademico.obtenerNotas(4);
         promedio = DatoFinal.obtenerPromedio(misNotas);
+        String notas = "";
+        for (int i = 0; i < misNotas.length; i++) {
+            notas = String.format("%s%.2f-",notas,misNotas[i]);
+        }
         
         
         System.out.printf("Los datos ingresados son:\n"
                 + "Nombre: %s\n"
                 + "Apellido: %s\n"
                 + "Ciudad: %s\n"
+                + "Con notas: %s\n"
                 + "Promedio: %.2f\n",
                 nombre,
                 apellidoRetornado,
                 ciudad,
+                notas,
                 promedio);
     }
     
