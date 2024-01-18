@@ -20,20 +20,19 @@ public class EjemploTres {
         // 
         int a = 100;
         int b = 100;
-        // System.out.println(NumberUtils.compare(a, b));
+        System.out.println(NumberUtils.compare(a, b));
         // El número 100 es mayor a 10
         // El número 10 es menor a 100
         // El número 100 es igual a 100
-        
-        
-        // System.out.println( obtenerDecimal("10.2") + 20 );
-        System.out.printf("El número mayor es: %.2f\n", 
-                NumberUtils.max(10.2, 101.1, 4.2) );
+
+        // System.out.println(obtenerDecimal("10.2") + 20);
+        // System.out.printf("El número mayor es: %.2f\n", 
+        //       NumberUtils.max(10.2, 101.1, 4.2) );
     }
-    
-    public static double obtenerDecimal(String cadena){
+
+    public static double obtenerDecimal(String cadena) {
         double d = NumberUtils.createDouble(cadena);
         return d;
     }
-    
+
 }
